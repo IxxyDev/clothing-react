@@ -1,9 +1,8 @@
 import { useState } from "react";
 
 import FormInput from "../form-input/form-input.component";
-import 'src/components/sign-in-form/sign-in-form.styles.scss';
+import './sign-in-form.styles.scss';
 import {
-	createUserDocumentFromAuth,
 	signInAuthUserWithEmailAndPassword,
 	signInWithGooglePopup
 } from "../../utils/firebase/firebase.utils";
@@ -17,7 +16,6 @@ const defaultFormFields = {
 const SignInForm = () => {
 	const [formFields, setFormFields] = useState(defaultFormFields);
 	const { email, password } = formFields;
-
 
 	const handleChange = event => {
 		const { name, value } = event.target;
