@@ -6,8 +6,9 @@ const Home = () => {
 	return (
 		<>
 			<Directory/>
-			<Outlet />
+			<Outlet/>
 		</>
+	)
 }
 
 export default Home;
